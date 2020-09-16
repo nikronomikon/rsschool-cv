@@ -1,12 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
     <title>HTML, CSS & Git Basics</title>
 </head>
 <body>
-    
+<header class="header">
+    <article class="header_container">
+        <h1>Nikita Ivanchikov.</h1>
+        <!-- <h1>Nikita Ivanchikov.<span> RSSchool education</span></h1> -->
+        <nav class="navigation">
+            <ul class="main_menu">
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">English</a></li>
+            </ul>
+        </nav>
+    </article>        
+</header>
+<main class="main_content">
+    <article class="main_container">
+        <section class="arrow">
+            <span>ABOUT ME</span>
+        </section>
+        <section class="my_info_container">
+            <div class="img_container">
+                <img src="./images/myphoto.jpg" alt="my_photo" class="image">
+            </div>
+            <div class="contacts_container">
+            <h2 id="contacts">Contacts</h2 id="">
+                <div class="contacts_list">
+                    <div class="column_1">
+                        <p>Tel:</p>
+                        <p>Email:</p>
+                        <p>Telegram:</p>
+                        <p>Facebook:</p>
+                    </div>
+                    <div class="column_2">
+                        <p><a href="tel:+375297516851">+375297516851</a></p>
+                        <p><a href="mailto:niva.pho@gmail.com">niva.pho@gmail.com</a></p>
+                        <p><a href="https://t.me/rainbowblck">@rainbowblck</a></p>
+                        <p><a href="https://www.facebook.com/nikita.vanchiko">https://www.facebook.com/nikita.vanchiko</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="summary_container">
+            <h2 id="summary">Summary</h2 id="">
+            <div class="text">
+                <p>I want to improve my skills to become a front-end developer</p>
+            </div>
+        </section>
+        <section class="skills_container">
+            <h2 id="skills">Skills</h2>
+            <div class="text">
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>GIT</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                <div class="diagram">
+                    <ul>
+                        <li id="html">50%</li>
+                        <li id="css">40%</li>
+                        <li id="js">15%</li>
+                        <li id="git">5%</li>
+                        <li id="photoshop">50%</li>
+                    </ul>
+                </div>
+            </ul>
+            </div>
+        </section>
+        <section class="code_container">
+            <h2 id="code">Code example</h2 id="">
+            <div class="text">
+                <p>
+                    It is my solution for kata <a href="https://www.codewars.com/kata/5b1d38f4d74b5b07350000a3"><7kyu> Russian plurals</a>
+                </p>
+                    <p class="code">
+                        <code>
+                        const makePlural = (options, number) => {<br>
+                            let lastNumber = number % 10;<br>
+                            if (number >= 5 && number < 20) {return options[2];}<br>
+                            switch (lastNumber) {<br>
+                                case 1: return options[0]; break;<br>
+                                case 2:<br>
+                                case 3:<br>
+                                case 4: return options[1]; break;<br>
+                                default: return options[2]; break;<br>
+                            };<br>
+                          }<br>
+                        </code>
+                    </p>
+            </div>
+        </section>
+        <section class="experience_container">
+            <h2 id="experience">Experience</h2 id="">
+                <div  class="text">
+                    <p>I has no real experience in development only a number of codewars and HTML academy tasks</p>
+                </div>
+        </section>
+        <section class="education_container">
+            <h2 id="education">Education</h2 id="">
+                <div class="text">
+                    <ul>
+                        <li>Self-education</li>
+                        <li>Number of HTML academy courses</li>
+                    </ul>
+                </div>
+        </section>
+        <section class="language_container">
+            <h2 id="english">English</h2 id="">
+                <div  class="text">
+                    <p>Lower-intermediate</p>
+                </div>
+        </section>
+    </article>
+</main>
+<footer class="footer">
+    <p>&copy;Copyright</p>
+</footer>
 </body>
 </html>
