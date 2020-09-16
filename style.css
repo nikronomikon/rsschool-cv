@@ -7,7 +7,8 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
-.header, 
+.header,
+.main, 
 .footer {
     margin: 0 auto;
     width: 100%;
@@ -63,11 +64,9 @@ h1 {
     /* filter: drop-shadow(0px 0px 2px rgb(255, 246, 196)); */
 }
 
-.main_content {
-    margin: 0 auto;
+.main {
     padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 1024px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -83,15 +82,20 @@ h1 {
 }
 
 .arrow {
+    left: -50px;
     padding-top: 10px;
     padding-left: 30px;
     width: 350px;
     height: 40px;
-    font-weight: 700;
-    color: #fff;
     text-align: left;
     background: linear-gradient(-45deg,transparent 50%, black 50%),
                 linear-gradient(45deg,black 50%, transparent 50%);
+}
+.arrow h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #fff;
+    border: none;
 }
 
 .my_info_container {
